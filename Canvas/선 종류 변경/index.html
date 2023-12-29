@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>선종류</title>
+</head>
+<body>
+  <canvas></canvas>
+<script>
+  let canvas = document.querySelector("canvas")
+  let ctx = canvas.getContext('2d')
+  ctx.beginPath()
+  ctx.moveTo(canvas.width*0.2,canvas.height*0.2)
+  ctx.lineTo(canvas.width*0.8,canvas.height*0.2)
+  ctx.setLineDash([])
+  ctx.stroke()
+
+  ctx.beginPath()
+  ctx.moveTo(canvas.width*0.2,canvas.height*0.4)
+  ctx.lineTo(canvas.width*0.8,canvas.height*0.4)
+  ctx.setLineDash([5,5])
+  ctx.stroke()
+
+  ctx.beginPath()
+  ctx.moveTo(canvas.width*0.2,canvas.height*0.6)
+  ctx.lineTo(canvas.width*0.8,canvas.height*0.6)
+  ctx.setLineDash([5,10])
+  ctx.stroke()
+</script>
+</body>
+</html>
