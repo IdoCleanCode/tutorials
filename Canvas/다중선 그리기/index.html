@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>다중선그리기</title>
+</head>
+<body>
+ <canvas></canvas>
+<script>
+  let canvas = document.querySelector("canvas")
+  let ctx = canvas.getContext('2d')
+  canvas.width = 300
+  canvas.height = 300
+  let canvasWidth = canvas.width
+  let canvasHeight = canvas.height
+
+  ctx.beginPath()
+  //첫번째 줄
+  ctx.moveTo(canvasWidth*0.2, canvasHeight*0.2)
+  ctx.lineTo(canvasWidth*0.8, canvasHeight*0.2)
+  ctx.stroke()
+
+  //두번째 줄
+  ctx.moveTo(canvasWidth*0.2, canvasHeight*0.4)
+  ctx.lineTo(canvasWidth*0.8, canvasHeight*0.4)
+  ctx.stroke()
+
+  //세번째 줄
+  ctx.moveTo(canvasWidth*0.2, canvasHeight*0.6)
+  ctx.lineTo(canvasWidth*0.8, canvasWidth*0.6)
+  ctx.stroke()
+
+  //네번째 줄
+  ctx.moveTo(canvasWidth*0.2, canvasWidth*0.8)
+  ctx.lineTo(canvasWidth*0.8, canvasHeight*0.8)
+  ctx.stroke()
+
+</script>
+</body>
+</html>
