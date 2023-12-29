@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>선 색상 변경</title>
+</head>
+<body>
+  <canvas></canvas>
+<script>
+  let canvas = document.querySelector("canvas")
+  let ctx = canvas.getContext('2d')
+  ctx.beginPath()
+  ctx.moveTo(50,50)
+  ctx.lineTo(300, 50)
+  ctx.strokeStyle = 'red'
+  ctx.stroke()
+</script>
+</body>
+</html>
