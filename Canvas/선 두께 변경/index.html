@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>선의 두께 변경</title>
+</head>
+<body>
+  <canvas></canvas>
+<script>
+  let canvas = document.querySelector("canvas")
+  let ctx = canvas.getContext('2d')
+  ctx.beginPath()
+  ctx.moveTo(30,30)
+  ctx.lineTo(150, 30)
+  ctx.lineWidth = 10
+  ctx.stroke()
+</script>
+</body>
+</html>
